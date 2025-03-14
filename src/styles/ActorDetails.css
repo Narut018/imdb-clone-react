@@ -1,0 +1,24 @@
+.actor-name-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.favorite-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.favorite-button:hover {
+  transform: scale(1.1);
+}
+
+.favorite-button svg {
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+}
