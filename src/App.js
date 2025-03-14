@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar.tsx";
 import MovieCard from './components/MovieCard.tsx';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./Pages/Home.tsx";
 import MovieList from "./Pages/MovieList.tsx";
 import MovieDetails from "./Pages/MovieDetails.tsx";
@@ -33,7 +33,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AuthProvider>
         <UserPreferencesProvider>
           <WatchlistProvider>
@@ -59,7 +59,7 @@ function App() {
           </WatchlistProvider>
         </UserPreferencesProvider>
       </AuthProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
